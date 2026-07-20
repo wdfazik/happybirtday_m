@@ -217,12 +217,13 @@
     gap: 8px;
   }
   .swipe-hint svg{
-    animation: nudge 1.6s ease-in-out infinite;
-  }
+  transform: rotate(-90deg);
+  animation: nudge 1.6s ease-in-out infinite;
+}
   @keyframes nudge{
-    0%,100%{ transform: translateX(0); opacity:.5; }
-    50%{ transform: translateX(6px); opacity:1; }
-  }
+  0%,100%{ transform: rotate(-90deg) translateX(0); opacity:.5; }
+  50%{ transform: rotate(-90deg) translateX(6px); opacity:1; }
+}
 
   /* ---------- final card ---------- */
   .card.final{
